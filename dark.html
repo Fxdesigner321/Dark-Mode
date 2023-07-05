@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dark Mode</title>
+</head>
+<body>
+    <header>
+        <label id="dark-change"></label>
+    </header>
+    <main>
+        <h1>Dark Mode</h1>
+        
+        <div id="respon">
+            <img src="windows.jpg" alt="Windows">
+            <p>Helps reduce eye strain, especially in low light conditions, 
+                by reducing the brightness of application windows and objects 
+                on the screen. Reduces the amount of blue light being displayed
+                 on the screen. Helps conserve battery power on laptops and mobile devices.</p>
+        </div>
+    </main>
+    <script>
+        var content = document.getElementsByTagName('body')[0];
+        var darkMode = document.getElementById('dark-change');
+        darkMode.addEventListener('click', function(){
+            darkMode.classList.toggle('active');
+            content.classList.toggle('night');
+        })
+    </script>
+</body>
+</html>
